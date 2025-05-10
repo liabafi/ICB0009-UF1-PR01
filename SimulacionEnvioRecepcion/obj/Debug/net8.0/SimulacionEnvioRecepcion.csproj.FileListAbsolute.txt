@@ -1,0 +1,6 @@
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.csproj.AssemblyReference.cache
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.AssemblyInfoInputs.cache
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.AssemblyInfo.cs
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.csproj.CoreCompileInputs.cache
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\SimulacionEnvioRecepcion\obj\Debug\net8.0\SimulacionEnvioRecepcion.sourcelink.json

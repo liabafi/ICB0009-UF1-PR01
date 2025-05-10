@@ -44,25 +44,40 @@ namespace SimuladorEnvioRecepcion
                 //LADO EMISOR
 
                 //Firmar mensaje
-
+                byte[] mensajeFirmado = Emisor.Firmar(TextoAEnviar_Bytes);
+                Console.WriteLine("Mensaje firmado: {0}", BytesToStringHex(mensajeFirmado));
 
                 //Cifrar mensaje con la clave simétrica
-
+                byte[] mensajeCifrado = ClaveSimetricaEmisor.Cifrar(TextoAEnviar_Bytes);
+                Console.WriteLine("Mensaje cifrado: {0}", BytesToStringHex(mensajeCifrado));
 
                 //Cifrar clave simétrica con la clave pública del receptor
+                byte[] claveSimetricaCifrada = Receptor.Cifrar(ClaveSimetricaEmisor.Clave);
+                Console.WriteLine("Clave simétrica cifrada: {0}", BytesToStringHex(claveSimetricaCifrada));
 
                 //LADO RECEPTOR
 
                 //Descifrar clave simétrica
-
+                byte[] claveSimetricaDescifrada = Receptor.Descifrar(claveSimetricaCifrada);
+                Console.WriteLine("Clave simétrica descifrada: {0}", BytesToStringHex(claveSimetricaDescifrada));
                 
                 //Descifrar clave simétrica
- 
+                byte[] mensajeDescifrado = ClaveSimetricaReceptor.Descifrar(mensajeCifrado);
+                Console.WriteLine("Mensaje descifrado: {0}", BytesToStringHex(mensajeDescifrado));
 
                 //Descifrar mensaje con la clave simétrica
-
+                byte[] mensajeVerificado = Receptor.Verificar(mensajeFirmado);
+                Console.WriteLine("Mensaje verificado: {0}", BytesToStringHex(mensajeVerificado));
 
                 //Comprobar firma
+
+                if (TextoAEnviar_Bytes == mensajeVerificado)
+                {
+                    Console.WriteLine("La firma es correcta.");
+                } else 
+                {
+                    Console.WriteLine("La firma no es correcta.");
+                }
 
             }
         }

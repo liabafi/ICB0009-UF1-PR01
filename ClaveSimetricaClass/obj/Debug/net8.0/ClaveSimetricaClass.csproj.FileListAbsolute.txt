@@ -1,0 +1,12 @@
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\bin\Debug\net8.0\ClaveSimetricaClass.deps.json
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\bin\Debug\net8.0\ClaveSimetricaClass.dll
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\bin\Debug\net8.0\ClaveSimetricaClass.pdb
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.AssemblyInfoInputs.cache
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.AssemblyInfo.cs
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.csproj.CoreCompileInputs.cache
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.sourcelink.json
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.dll
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\refint\ClaveSimetricaClass.dll
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ClaveSimetricaClass.pdb
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveSimetricaClass\obj\Debug\net8.0\ref\ClaveSimetricaClass.dll

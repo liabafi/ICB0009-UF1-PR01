@@ -1,0 +1,12 @@
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\bin\Debug\net8.0\ClaveAsimetricaClass.deps.json
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\bin\Debug\net8.0\ClaveAsimetricaClass.dll
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\bin\Debug\net8.0\ClaveAsimetricaClass.pdb
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ClaveAsimetricaClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ClaveAsimetricaClass.AssemblyInfoInputs.cache
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ClaveAsimetricaClass.AssemblyInfo.cs
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ClaveAsimetricaClass.csproj.CoreCompileInputs.cache
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ClaveAsimetricaClass.sourcelink.json
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ClaveAsimetricaClass.dll
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\refint\ClaveAsimetricaClass.dll
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ClaveAsimetricaClass.pdb
+C:\Users\lbatl\Desktop\ICB0009-UF1-PR01\ICB0009-UF1-PR01\ClaveAsimetricaClass\obj\Debug\net8.0\ref\ClaveAsimetricaClass.dll
