@@ -22,8 +22,8 @@ namespace SimuladorEnvioRecepcion
 
             /****PARTE 1****/
             //Login / Registro
-            Console.WriteLine ("¿Deseas registrarte? (S/N)");
-            string registro = Console.ReadLine ();
+            Console.WriteLine("¿Deseas registrarte? (S/N)");
+            string registro = Console.ReadLine();
 
             if (registro =="S")
             {
@@ -69,11 +69,11 @@ namespace SimuladorEnvioRecepcion
 
         public static void Registro()
         {
-            Console.WriteLine ("Indica tu nombre de usuario:");
+            Console.WriteLine("Indica tu nombre de usuario:");
             UserName = Console.ReadLine();
             //Una vez obtenido el nombre de usuario lo guardamos en la variable UserName y este ya no cambiará 
 
-            Console.WriteLine ("Indica tu password:");
+            Console.WriteLine("Indica tu password:");
             string passwordRegister = Console.ReadLine();
             //Una vez obtenido el passoword de registro debemos tratarlo como es debido para almacenarlo correctamente a la variable SecurePass
 
@@ -88,27 +88,50 @@ namespace SimuladorEnvioRecepcion
 
             // Guardar salt para su posterior logín
             SecurePass = hashedPassword;
-
         }
-
 
         public static bool Login()
         {
             bool auxlogin = false;
             do
             {
-                Console.WriteLine ("Acceso a la aplicación");
-                Console.WriteLine ("Usuario: ");
+                Console.WriteLine("Acceso a la aplicación");
+                Console.WriteLine("Usuario: ");
                 string userName = Console.ReadLine();
 
-                Console.WriteLine ("Password: ");
+                Console.WriteLine("Password: ");
                 string Password = Console.ReadLine();
 
                 /***PARTE 1***/
                 /*Modificar esta parte para que el login se haga teniendo en cuenta que el registro se realizó con SHA512 y salt*/
 
+                byte[] salt = GetSalt(userName);
 
-            }while (!auxlogin);
+                if (salt == null)
+                {
+                    Console.WriteLine("Usuario no encontrado.");
+                    return false;
+                }
+
+                // Calcular el hash del password introducido con el mismo salt
+                string hashedPassword = HashPassword(password, salt);
+
+                // Obtener el hash del password guardado para el usuario
+                string storeHashedPassword = GetStoredPasswordHash(userName);
+
+                // Comparar los hashes
+                bool loginSucessful = hashedPassword == storeHashedPassword;
+
+                if (loginSucessful)
+                {
+                    Console.WriteLine("Login correcto.");
+                } else 
+                {
+                    Console.WriteLine("Nombre de usuario o password incorrecto.");
+                }
+                return loginSucessful;
+
+            } while (!auxlogin);
 
             return auxlogin;
         }
@@ -127,7 +150,7 @@ namespace SimuladorEnvioRecepcion
         public static string HashPassword(string password, byte[] salt)
         {
             // Combinar el password con el salt
-            using (SHA512 sha512 = sha512.Create())
+            using(SHA512 sha512 = sha512.Create())
             {
                 // Concatenar el password con el salt
                 byte[] combinedBytes = Encoding.UTF8.GetBytes(password).Concat(salt).ToArray();
@@ -140,13 +163,12 @@ namespace SimuladorEnvioRecepcion
             }
         }
 
-        static string BytesToStringHex (byte[] result)
+        static string BytesToStringHex(byte[] result)
         {
             StringBuilder stringBuilder = new StringBuilder();
 
-            foreach (byte b in result)
+            foreach(byte b in result)
                 stringBuilder.AppendFormat("{0:x2}", b);
-
             return stringBuilder.ToString();
         }        
     }
