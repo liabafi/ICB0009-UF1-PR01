@@ -80,6 +80,15 @@ namespace SimuladorEnvioRecepcion
             /***PARTE 1***/
             /*Añadir el código para poder almacenar el password de manera segura*/
 
+            // Generar un salt aleatorio
+            byte[] salt = GenerateSalt();
+
+            // Combinar el password con el salt
+            string hashedPassword = HashPassword(passwordRegister, salt);
+
+            // Guardar salt para su posterior logín
+            SecurePass = hashedPassword;
+
         }
 
 
@@ -102,6 +111,33 @@ namespace SimuladorEnvioRecepcion
             }while (!auxlogin);
 
             return auxlogin;
+        }
+
+        public static byte[] GenerateSalt() 
+        {
+            // Generar un salt aleatorio 
+            byte[] salt = new byte[16];
+            using(RNGCryptoServiceProvider rngCSP = new RNGCryptoServiceProvider()) 
+            {
+                rngCSP.GetBytes(salt);
+            }
+            return salt;
+        }
+
+        public static string HashPassword(string password, byte[] salt)
+        {
+            // Combinar el password con el salt
+            using (SHA512 sha512 = sha512.Create())
+            {
+                // Concatenar el password con el salt
+                byte[] combinedBytes = Encoding.UTF8.GetBytes(password).Concat(salt).ToArray();
+
+                // Calcular el hash
+                byte[] hashBytes = sha512.ComputeHash(combinedBytes);
+
+                // Convertir el hash en una cadena hexadecimal
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
         }
 
         static string BytesToStringHex (byte[] result)
